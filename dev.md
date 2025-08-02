@@ -4,3 +4,7 @@
   --key-store-alias catatan \
   --key-store-alias-password smjlabs*ms1726
 ```
+
+ node --version && npm --version
+v22.16.0
+10.9.2
