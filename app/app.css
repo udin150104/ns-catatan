@@ -1,0 +1,149 @@
+﻿@import '@nativescript/theme/css/core.css';
+@import '@nativescript/theme/css/default.css';
+
+.label-material-icons {
+  font-family: "MaterialIcons-Regular";
+  font-size: 24;
+}
+.label-material-icons-sm {
+  font-family: "MaterialIcons-Regular";
+  font-size: 18;
+}
+.actionBar {
+  border-bottom-width: 0;
+  border-color: #c5c5c5;
+  padding: 10;
+  background-color: rgb(255, 255, 255);
+}
+
+.actionBarTitle {
+  color: black;
+  font-size: 24;
+  margin-left: 10;
+  flex-grow: 1;
+}
+
+.actionBarTitleSingle {
+  color: black;
+  font-size: 24;
+  margin-left: 0;
+  flex-grow: 1;
+}
+
+.actionBarTools {
+  color: #c0c0c0;
+}
+
+.input {
+  padding: 10 0;
+  font-size: 20;
+  border-bottom-width: 0;
+  border-color: #c5c5c5;
+   /* Properti untuk Android */
+  android-hint-text-color: #c5c5c5;
+  
+  /* Properti untuk iOS */
+  ios-placeholder-color: #c5c5c5;
+  
+  /* Atau gunakan properti cross-platform */
+  placeholder-color: #c5c5c5;
+  hint-color: #c5c5c5;
+}
+/* Kontainer ikon */
+.icon-container {
+  background-color: transparent;
+  border-width: 0;
+  border-color: transparent;
+  padding: 0;
+  margin: 0;
+  min-width: 24;
+  min-height: 24;
+  horizontal-align: left;
+  vertical-align: center;
+  
+  /* Menghilangkan shadow */
+  elevation: 0;
+  shadow-color: transparent;
+  shadow-radius: 0;
+  shadow-offset: 0 0;
+  box-shadow: none;
+  
+  /* Efek visual saat diklik */
+  android-ripple-color: transparent;
+  ios-highlighted-color: transparent;
+}
+
+/* Label ikon Material Icons */
+.label-material-icons {
+  font-family: "MaterialIcons-Regular";
+  font-size: 24;
+  padding: 0;
+  margin: 0;
+  horizontal-align: center;
+  vertical-align: center;
+}
+
+/* Efek saat kontainer diklik (Android) */
+.icon-container:active .label-material-icons {
+  color: rgb(77, 77, 77);
+}
+
+/* Efek saat kontainer diklik (iOS) */
+.ios .icon-container:highlighted .label-material-icons {
+  color: rgb(77, 77, 77);
+}
+.fab {
+  background-color: #000000;
+  color: white;
+  border-radius: 28;
+  font-size: 28;
+  text-align: center;
+  vertical-align: center;
+  elevation: 6;
+  shadow-color: black;
+  shadow-opacity: 0.3;
+  shadow-radius: 4;
+  shadow-offset: 0 2;
+}
+
+.fab:active {
+  background-color: #585858;
+  color: #c0c0c0;
+}
+
+.editor{
+  flex-grow: 1;
+}
+.toolbar-container {
+  background-color: #f9f9f9; /* opsional untuk kontras toolbar */
+}
+.icon-for-quil{
+  margin:0 10;
+  color: rgb(95, 95, 95);
+}
+.warp {
+  /* margin:10; */
+  /* background-color:  rgb(235, 235, 235); */
+  border-radius: 8;
+}
+.card{
+  margin-bottom:10;
+}
+.card-footer{
+  padding:10;
+  border-radius: 8;
+}
+.card-title {
+  font-weight: bold;
+  font-size: 18;
+  color: #666;
+}
+
+.note-snippet {
+  font-size: 14;
+  color: #666;
+  margin-top: 4;
+}
+.text-gray{
+  color: rgb(160, 160, 160);
+}

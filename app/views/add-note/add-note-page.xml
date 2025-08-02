@@ -1,0 +1,41 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <StackLayout>
+    <FlexboxLayout justifyContent="flex-start" alignItems="center" class="actionBar">
+      <ContentView tap="goBack" class="icon-container">
+        <Label class="label-material-icons" text="arrow_back" />
+      </ContentView>
+      <Label text="{{ titlePage }}" class="actionBarTitle" />
+      <Label class="label-material-icons" text="save" tap="onSave" />
+    </FlexboxLayout>
+    <StackLayout>
+      <TextField hint="Judul catatan"  text="{{ title }}" class="input" id="titleField"/>
+
+      <FlexboxLayout flexWrap="wrap" justifyContent="flex-start" alignItems="center" class="toolbar-container" padding="8">
+
+        <!-- Text Styles -->
+        <Label class="label-material-icons icon-for-quil" text="link" tap="onInsertLink" />
+        <Label class="label-material-icons icon-for-quil" text="format_bold" tap="onBold" />
+        <Label class="label-material-icons icon-for-quil" text="format_italic" tap="onItalic" />
+        <Label class="label-material-icons icon-for-quil" text="format_underlined" tap="onUnderline" />
+        <Label class="label-material-icons icon-for-quil" text="strikethrough_s" tap="onStrike" />
+        <Label class="label-material-icons icon-for-quil" text="superscript" tap="onSuper" />
+        <Label class="label-material-icons icon-for-quil" text="subscript" tap="onSub" />
+
+        <!-- Lists & Scripts -->
+        <Label class="label-material-icons icon-for-quil" text="format_list_numbered" tap="onOrderedList" />
+        <Label class="label-material-icons icon-for-quil" text="format_list_bulleted" tap="onBulletList" />
+
+        <!-- Indentation & Alignment -->
+        <Label class="label-material-icons icon-for-quil" text="format_indent_decrease" tap="onIndentMinus" />
+        <Label class="label-material-icons icon-for-quil" text="format_indent_increase" tap="onIndentPlus" />
+
+        <!-- Image -->
+        <Label class="label-material-icons icon-for-quil" text="image" tap="onInsertImage" />
+        <Label class="label-material-icons icon-for-quil" text="format_clear" tap="onClearFormat" />
+
+      </FlexboxLayout>
+      <WebView id="editor" class="editor"/>
+    </StackLayout>
+  </StackLayout>
+
+</Page>

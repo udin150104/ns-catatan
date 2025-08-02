@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="quill.snow.css" rel="stylesheet" />
+  <link href="quill.bubble.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    #editor {
+      margin-left: 0px;
+      /* height: 400px; */
+      padding: 0px;
+      border: 0px solid #d8d8d8;
+      font-size: 18px;
+    }
+
+    .ql-editor.ql-blank::before {
+      font-style: normal;
+      color: #c5c5c5;
+      font-size: 18px;
+      content: attr(data-placeholder);
+      /* digunakan oleh Quill */
+      position: absolute;
+      left: 10;
+      right: 0;
+      pointer-events: none;
+    }
+
+    .ql-toolbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: white;
+      border-top: 0px solid;
+      /* Penting agar tidak transparan */
+      border-bottom: 1px solid #ccc;
+    }
+
+    .ql-container {
+      margin-top: 10px;
+      /* Sesuaikan tinggi toolbar */
+    }
+  </style>
+</head>
+
+<body>
+  <div id="editor"></div>
+
+  <script src="quill.min.js"></script>
+  <script>
+
+    const quill = new Quill('#editor', {
+      theme: 'snow',
+      placeholder: 'Isi Catatan',
+      modules: {
+        toolbar: false
+      }
+    });
+
+    window.insertImage = function (src) {
+      const range = quill.getSelection(true);
+      quill.insertEmbed(range.index, 'image', src);
+    };
+
+    window.getEditorHtml = () => quill.root.innerHTML;
+    window.setEditorHtml = html => quill.root.innerHTML = html;
+    window.setEditorContent = function (html) {
+      quill.root.innerHTML = html || "";
+    };
+
+  </script>
+</body>
+
+</html>
