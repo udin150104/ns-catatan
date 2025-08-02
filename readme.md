@@ -1,5 +1,5 @@
 # CATATAN
 
-[![NativeScript Logo](https://raw.githubusercontent.com/NativeScript/artwork/master/logo/nativescript-icon-blue.png)](https://nativescript.org)
+[![NativeScript Logo](App_Resources/Android/src/main/res/drawable-hdpi/logo.png)](https://nativescript.org)
 
 Aplikasi ini dibangun menggunakan NativeScript untuk pengembangan mobile native dengan JavaScript dan TypeScript.
