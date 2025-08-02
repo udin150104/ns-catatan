@@ -1,5 +1,5 @@
-## Catatan
+# CATATAN
 
-Aplikasi catatan sederhana untuk pribadi menggunakan nativescript
+[![NativeScript Logo](https://raw.githubusercontent.com/NativeScript/artwork/master/logo/nativescript-icon-blue.png)](https://nativescript.org)
 
-![NativeScript Logo](https://raw.githubusercontent.com/NativeScript/brand-assets/main/logos/nativescript-icon-blue.svg)
+Aplikasi ini dibangun menggunakan NativeScript untuk pengembangan mobile native dengan JavaScript dan TypeScript.
